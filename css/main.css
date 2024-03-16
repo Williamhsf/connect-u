@@ -1,5 +1,6 @@
 :root {
   --purple: #7F56D9;
+  --black: #020202;
   --gray: #71717A;
 
   --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
@@ -167,7 +168,6 @@ section {
   gap: 1.6rem;
 
   background-color: transparent;
-
 }
 
 .home-bg .home .content .click-here > div img {
@@ -177,5 +177,57 @@ section {
 .home-bg .home .content .click-here > div p {
   color: var(--gray);
   font-size: 1.4rem;
+}
+
+.home-bg .home .content .click-here a {
+  background-color: var(--purple);
+  font-size: 1.4rem;
+  color: #FFF;
+  text-transform: capitalize;
+  padding: 0.7rem 2rem;
+  border-radius: 999px;
+  margin-right: -0.5rem;
+}
+
+.home-bg .home .content .review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home-bg .home .content .review .rating-content
+ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  
+  gap: 2rem;
+}
+
+.home-bg .home .content .review > p {
+  margin-top: 1.6rem;
+  color: var(--black);
+  font-size: 1.4rem;
+}
+
+.home-bg .home .content .review .rating-content .rating-stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.home-bg .home .content .review .rating-content .rating-reviews p {
+  color: var(--black);
+  font-size: 1.6rem;
+}
+
+.home-bg .home .content .review .rating-content .rating-reviews p span {
+  color: var(--gray);
+  font-size: 1.6rem;
 }
 /* home ends */
