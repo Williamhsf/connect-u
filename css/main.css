@@ -109,7 +109,7 @@ section {
 }
 
 .home-bg .home {
-  min-height: 70rem;
+  min-height: 60rem;
 
   display: -webkit-box;
   display: -ms-flexbox;
@@ -232,3 +232,122 @@ section {
   font-size: 1.6rem;
 }
 /* home ends */
+/* faq starts */
+.faq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-align: center;
+     -ms-flex-align: center;
+        align-items: center;
+
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.6rem;
+  background-color: #FFF;
+}
+
+.faq .faq-header {
+  text-align: center;
+  display: grid;
+
+  gap: 1rem;
+}
+
+.faq .faq-header h2 {
+  font-size: 3.2rem;
+  color: var(--purple);
+}
+
+.faq .faq-header p {
+  font-size: 1.4rem;
+  color: var(--gray);
+}
+
+.faq .accordion {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.faq .accordion .accordion-item {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.faq .accordion .accordion-item .accordion-header h4 {
+  margin: 3.2rem 1rem;
+  font-size: 1.7rem;
+  font-weight: lighter;
+  cursor: pointer;
+  color: var(--black);
+}
+
+.faq .accordion .accordion-item .accordion-content p {
+  margin: 0 1rem;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  color: var(--gray);
+  padding-bottom: 16px;
+}
+
+.accordion-item--active .accordion-content {
+  max-height: 1000px;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.accordion-item--closed .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.accordion-content {
+  transition: max-height 0.3s ease-out;
+}
+
+.faq-container {
+  background-color: var(--gray-500);
+  width: 800px;
+  min-height: 40vh;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-align: center;
+     -ms-flex-align: center;
+        align-items: center;
+
+  justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+
+  border-radius: 10px;
+
+  gap: 20px;
+}
+
+.faq-container img {
+  width: 120px;
+  height: 56px;
+}
+
+.faq-container p {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.faq-container a {
+  background-color: var(--purple);
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  color: #FFF;
+}
+/* faq ends */
