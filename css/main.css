@@ -52,6 +52,7 @@ section {
 ul {
   list-style: none;
 }
+
 /* header starts */
 .header {
   position: -webkit-sticky;
@@ -110,13 +111,12 @@ ul {
 .home-bg {
   background: -webkit-gradient(linear, left top, right top, from(#E0D5F7), color-stop(70%, transparent)), url(../assets/home-img.png) no-repeat;
   background: linear-gradient(90deg, #E0D5F7, transparent 70%), url(../assets/home-img.png) no-repeat;
-  
-  background-size: cover;
-  background-position: center;
+
+  background-position: right center;
 }
 
 .home-bg .home {
-  min-height: 60rem;
+  min-height: 70rem;
 
   display: -webkit-box;
   display: -ms-flexbox;
@@ -252,7 +252,7 @@ ul {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 1.6rem;
+  gap: 1rem;
   background-color: #FFF;
 }
 
@@ -281,12 +281,12 @@ ul {
 
 .faq .accordion .accordion-item {
   border-bottom: 1px solid #ccc;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
   overflow: hidden;
 }
 
 .faq .accordion .accordion-item .accordion-header h4 {
-  margin: 3.2rem 1rem;
+  margin: 1.7rem 1rem;
   font-size: 1.7rem;
   font-weight: lighter;
   cursor: pointer;
@@ -298,11 +298,11 @@ ul {
   font-size: 1.4rem;
   line-height: 1.2;
   color: var(--gray-700);
-  padding-bottom: 16px;
+  padding-bottom: 1rem;
 }
 
 .accordion-item--active .accordion-content {
-  max-height: 1000px;
+  max-height: 100rem;
   transition: max-height 0.5s ease-in-out;
 }
 
@@ -318,7 +318,7 @@ ul {
 .faq-container {
   background-color: var(--gray-50);
   width: 800px;
-  min-height: 40vh;
+  min-height: 20rem;
 
   display: -webkit-box;
   display: -ms-flexbox;
@@ -338,7 +338,7 @@ ul {
 
   border-radius: 10px;
 
-  gap: 20px;
+  gap: 1.6rem;
 }
 
 .faq-container img {
@@ -378,8 +378,8 @@ ul {
 }
 
 .plans .plans-header span {
-  margin-top: 4rem;
-  padding: 1rem;
+  margin-top: 1.5rem;
+  padding: .5rem 1rem;
   border-radius: 999px;
   background-color: #D6BBFB;
   color: var(--purple-700);
@@ -388,7 +388,6 @@ ul {
 }
 
 .plans .plans-header h2 {
-  margin-top: 1rem;
   color: var(--purple-900);
   font-size: 4rem;
 }
@@ -425,36 +424,65 @@ ul {
 }
 
 .plans-container .price-table .price-header .logo-price img {
-  margin-top: 3rem;
+  margin-top: 1.4rem;
   width: 4rem;
 }
 
 .plans-container .price-table .price-header .price-spans span:nth-child(1) {
   color: var(--purple-600);
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: bolder;
 }
 
 .plans-container .price-table .price-header .price-spans span:nth-child(2) {
   color: var(--gray-900);
-  font-size: 4rem;
-  font-weight: bolder;
+  font-size: 2.8rem;
+  font-weight: bolder;  
 }
 
 .plans-container .price-table .price-header .price-spans span:nth-child(3) {
   color: var(--gray-700);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .list-container {
-  border: 1px solid red;
-  width: 20rem;
+  width: 26rem;
   margin: 10px auto;
 }
 
+.list-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 .list-container ul li {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
+.list-container ul li img {
+  width: 1.8rem;
+}
+.list-container ul li span {
+  color: var(--gray-700);
+  font-size: 1.4rem;
+}
+
+.price-header .bn-plan {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 1.6rem 0;
+  border-radius: 5px;
+  
+  background-color: var(--purple-600);
+  text-align: center;
+}
+
+.price-header .bn-plan a {
+  font-size: 1.6rem;
+  color: var(--gray-50);
+}
 /* plans ends */
+/* team starts */
+/* team ends */
