@@ -1,8 +1,12 @@
 :root {
-  --purple: #7F56D9;
+  --purple-200: #E9D7FE;
+  --purple-600: #6941C6;
+  --purple-700: #7F56D9;
+  --purple-900: #42307D;
   --black: #020202;
-  --gray: #71717A;
-  --gray-500: #F9FAFB;
+  --gray-50: #F9FAFB;
+  --gray-700: #71717A;
+  --gray-900: #101828;
 
   --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
@@ -28,7 +32,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--purple);
+  background-color: var(--purple-700);
 }
 
 html {
@@ -45,6 +49,9 @@ section {
   margin: 0 auto;
 }
 
+ul {
+  list-style: none;
+}
 /* header starts */
 .header {
   position: -webkit-sticky;
@@ -83,7 +90,7 @@ section {
 .header .flex .navbar a {
   margin-left: 2rem;
   font-size: 2rem;
-  color: var(--purple);
+  color: var(--purple-700);
   font-weight: bold;
 }
 
@@ -93,7 +100,7 @@ section {
 
 #menu-btn {
   font-size: 2.5rem;
-  color: var(--purple);
+  color: var(--purple-700);
   cursor: pointer;
 }
 
@@ -126,7 +133,7 @@ section {
 
 .home-bg .home .content h3 {
   font-size: 4rem;
-  color: var(--purple);
+  color: var(--purple-700);
   line-height: 1.4;
   font-weight: lighter;
 }
@@ -134,12 +141,12 @@ section {
 .home-bg .home .content p {
   padding: 1rem 0;
   font-size: 1.7rem;
-  color: var(--purple);
+  color: var(--purple-700);
   line-height: 1.2;
 }
 
 .home-bg .home .content .click-here {
-  border: 1px solid var(--purple);
+  border: 1px solid var(--purple-700);
 
   display: -webkit-box;
   display: -ms-flexbox;
@@ -176,12 +183,12 @@ section {
 }
 
 .home-bg .home .content .click-here > div p {
-  color: var(--gray);
+  color: var(--gray-700);
   font-size: 1.4rem;
 }
 
 .home-bg .home .content .click-here a {
-  background-color: var(--purple);
+  background-color: var(--purple-700);
   font-size: 1.4rem;
   color: #FFF;
   text-transform: capitalize;
@@ -228,7 +235,7 @@ section {
 }
 
 .home-bg .home .content .review .rating-content .rating-reviews p span {
-  color: var(--gray);
+  color: var(--gray-700);
   font-size: 1.6rem;
 }
 /* home ends */
@@ -249,7 +256,8 @@ section {
   background-color: #FFF;
 }
 
-.faq .faq-header {
+.faq .faq-header,
+.plans .plans-header {
   text-align: center;
   display: grid;
 
@@ -258,12 +266,12 @@ section {
 
 .faq .faq-header h2 {
   font-size: 3.2rem;
-  color: var(--purple);
+  color: var(--purple-700);
 }
 
 .faq .faq-header p {
   font-size: 1.4rem;
-  color: var(--gray);
+  color: var(--gray-700);
 }
 
 .faq .accordion {
@@ -289,7 +297,7 @@ section {
   margin: 0 1rem;
   font-size: 1.4rem;
   line-height: 1.2;
-  color: var(--gray);
+  color: var(--gray-700);
   padding-bottom: 16px;
 }
 
@@ -308,7 +316,7 @@ section {
 }
 
 .faq-container {
-  background-color: var(--gray-500);
+  background-color: var(--gray-50);
   width: 800px;
   min-height: 40vh;
 
@@ -344,10 +352,109 @@ section {
 }
 
 .faq-container a {
-  background-color: var(--purple);
+  background-color: var(--purple-700);
   padding: 1rem 2rem;
   font-size: 1.4rem;
   border-radius: 5px;
   color: #FFF;
 }
 /* faq ends */
+/* plans starts */
+.plans,
+.plans .plans-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-align: center;
+     -ms-flex-align: center;
+        align-items: center;
+
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.6rem;
+  background-color: var(--purple-200);
+}
+
+.plans .plans-header span {
+  margin-top: 4rem;
+  padding: 1rem;
+  border-radius: 999px;
+  background-color: #D6BBFB;
+  color: var(--purple-700);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.plans .plans-header h2 {
+  margin-top: 1rem;
+  color: var(--purple-900);
+  font-size: 4rem;
+}
+
+.plans .plans-header p {
+  color: var(--purple-600);
+  font-size: 1.8rem;
+}
+
+.plans-container{
+  width: 900px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.plans-container .price-table {
+  border: 1px solid var(--purple-200);
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+  background-color: #FFF;
+  width: 280px;
+  
+  display: flex;
+  justify-content: center;
+}
+
+.plans-container .price-table .price-header,
+.plans-container .price-table .price-header .price-spans {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  align-items: center;
+}
+
+.plans-container .price-table .price-header .logo-price img {
+  margin-top: 3rem;
+  width: 4rem;
+}
+
+.plans-container .price-table .price-header .price-spans span:nth-child(1) {
+  color: var(--purple-600);
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.plans-container .price-table .price-header .price-spans span:nth-child(2) {
+  color: var(--gray-900);
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+.plans-container .price-table .price-header .price-spans span:nth-child(3) {
+  color: var(--gray-700);
+  font-size: 1.6rem;
+}
+
+.list-container {
+  border: 1px solid red;
+  width: 20rem;
+  margin: 10px auto;
+}
+
+.list-container ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/* plans ends */
