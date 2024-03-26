@@ -57,33 +57,22 @@ ul {
 
 /* header starts */
 .header {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
   background-color: #FFF;
-
-  -webkit-box-shadow: var(--box-shadow);
-          box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
   z-index: 1000;
 }
 
 .header .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-
-  -webkit-box-align: center;
-     -ms-flex-align: center;
-        align-items: center;
-
-  -webkit-box-pack: justify;
-     -ms-flex-pack: justify;
-   justify-content: space-between;
-
-   position: relative;
-   padding: 1.5rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  
+  position: relative;
+  padding: 1.5rem 2rem;
 }
 
 .header .flex .logo img {
@@ -102,6 +91,7 @@ ul {
 }
 
 #menu-btn {
+  display: none;
   font-size: 2.5rem;
   color: var(--purple-700);
   cursor: pointer;
@@ -111,21 +101,14 @@ ul {
 
 /* home starts */
 .home-bg {
-  background: -webkit-gradient(linear, left top, right top, from(#E0D5F7), color-stop(70%, transparent)), url(../assets/home-img.png) no-repeat;
   background: linear-gradient(90deg, #E0D5F7, transparent 70%), url(../assets/home-img.png) no-repeat;
-
   background-position: center center;
 }
 
 .home-bg .home {
   min-height: 70rem;
-
-  display: -webkit-box;
-  display: -ms-flexbox;
+  
   display: flex;
-
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -149,35 +132,21 @@ ul {
 
 .home-bg .home .content .click-here {
   border: 1px solid var(--purple-700);
-
-  display: -webkit-box;
-  display: -ms-flexbox;
+  
   display: flex;
-
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  justify-content: space-between;
   align-items: center;
 
-  -webkit-box-pack: justify;
-     -ms-flex-pack: justify;
-   justify-content: space-between;
-
-   padding: 0 1rem;
-   border-radius: 999px;
+  padding: 0 1rem;
+  border-radius: 999px;
 }
 
 .home-bg .home .content .click-here > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: transparent;
   display: flex;
-
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 
   gap: 1.6rem;
-
-  background-color: transparent;
 }
 
 .home-bg .home .content .click-here > div img {
@@ -200,19 +169,12 @@ ul {
 }
 
 .home-bg .home .content .review {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .home-bg .home .content .review .rating-content
  {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   
   gap: 2rem;
@@ -225,8 +187,6 @@ ul {
 }
 
 .home-bg .home .content .review .rating-content .rating-stars {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 0.5rem;
 }
@@ -243,17 +203,10 @@ ul {
 /* home ends */
 /* faq starts */
 .faq {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  align-items: center;
 
-  -webkit-box-align: center;
-     -ms-flex-align: center;
-        align-items: center;
-
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 1rem;
   background-color: #FFF;
 }
@@ -322,22 +275,11 @@ ul {
   width: 800px;
   min-height: 20rem;
 
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
 
-  -webkit-box-align: center;
-     -ms-flex-align: center;
-        align-items: center;
-
+  align-items: center;
   justify-content: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-
   border-radius: 10px;
 
   gap: 1.6rem;
@@ -364,17 +306,10 @@ ul {
 /* plans starts */
 .plans,
 .plans .plans-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  -webkit-box-align: center;
-     -ms-flex-align: center;
-        align-items: center;
-
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
   gap: 1.6rem;
   background-color: var(--purple-200);
 }
@@ -649,7 +584,6 @@ ul {
 
 @media (max-width: 450px) {
   section {
-    border: 1px solid red;
     width: 100%;
   }
 }
